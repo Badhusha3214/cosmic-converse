@@ -5,7 +5,7 @@ const apiKey = process.env.GEMINI_API_KEY;
 
 // Initialize Google Generative AI with the API key
 const genAI = new GoogleGenerativeAI(apiKey);
-const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
 async function run(message, planetInfo, previousContent) {
   // console.log(JSON.stringify(previousContent));
