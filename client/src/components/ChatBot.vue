@@ -102,7 +102,7 @@ export default {
 
       try {
         const response = await axios.post(
-          "https://cosmic-converse.onrender.com/generate",
+          "/api/generate",
           {
             gemini_content: userMessage,
             planet_info: this.planetInfo,
